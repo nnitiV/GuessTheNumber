@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Winky Sans", sans-serif;
+}
+
+body {
+	background: rgb(27, 99, 188);
+	color: white;
+}
+
+header {
+	position: absolute;
+	left: 15px;
+	top: 30px;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+	padding: 1vh 2vw;
+	border-radius: 1.25rem;
+	font-weight: bold;
+	border: 1px solid black;
+	background: rgba(25, 25, 25, .25);
+	transition: .25s;
+}
+
+header a:hover {
+	background: rgba(25, 25, 25, 0.8);
+}

@@ -1,0 +1,24 @@
+
+@-webkit-keyframes glowing {
+  0% { background-color: #0000b2; -webkit-box-shadow: 0 0 3px #0000b2; }
+  50% { background-color: #0000ff; -webkit-box-shadow: 0 0 40px #0000ff; }
+  100% { background-color: #0000b2; -webkit-box-shadow: 0 0 3px #0000b2; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #0000b2; -moz-box-shadow: 0 0 3px #0000b2; }
+  50% { background-color: #0000ff; -moz-box-shadow: 0 0 40px #0000ff; }
+  100% { background-color: #0000b2; -moz-box-shadow: 0 0 3px #0000b2; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #0000b2; box-shadow: 0 0 3px #0000b2; }
+  50% { background-color: #0000ff; box-shadow: 0 0 40px #0000ff; }
+  100% { background-color: #0000b2; box-shadow: 0 0 3px #0000b2; }
+}
+
+@keyframes glowing {
+  0% { background-color: #0000b2; box-shadow: 0 0 3px #0000b2; }
+  50% { background-color: #0000ff; box-shadow: 0 0 40px #0000ff; }
+  100% { background-color: #0000b2; box-shadow: 0 0 3px #0000b2; }
+}

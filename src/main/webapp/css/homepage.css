@@ -1,0 +1,76 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 1.25rem;
+	padding: 16vh 0vw;
+	border: 1px solid rgba(225, 225, 225, 0.8);
+	background: rgba(225, 225, 225, 0.15);
+}
+
+#initial-text {
+	width: 50vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 2.75;
+}
+
+#initial-text h1 {
+	font-size: 2rem;
+}
+
+#initial-text p {
+	font-size: 1.1rem;
+}
+
+#difficulties {
+	width: 25vw;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1vh;
+}
+
+#difficulties a button {
+	width: 7vw;
+	height: 6vh;
+	background: none;
+	position: relative; 
+	color: white;
+	transition: all .15s ease;
+	box-shadow: -5px 5px 0px black;
+	transform: translate(0px, 0px); 
+}
+
+#difficulties a button:active {
+	box-shadow: 0px 0px 0px black; 
+	transform: translate(-5px, 5px); 
+}
+
+#difficulties a button:hover {
+	cursor: pointer;
+}
+#difficulties a.easy button {
+	border: 1px solid green;
+	background: rgba(0, 128, 0, 0.5);
+}
+
+#difficulties a.normal button {
+	border: 1px solid blue;
+	background: rgba(0, 0, 128, 0.5);
+}
+
+#difficulties a.hard button {
+	border: 1px solid red;
+	background: rgba(128, 0, 0, 0.5);
+}

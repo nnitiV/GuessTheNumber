@@ -1,0 +1,57 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 1.25rem;
+	padding: 12vh 16vw;
+	background: rgba(225, 225, 225, 0.5);
+	border: 1px solid rgba(225, 225, 225, 0.8);
+	background: rgba(225, 225, 225, 0.5);
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main form input {
+	outline: none;
+}
+
+main form input[type="number"] {
+	width: 8vw;
+	height: 5vh;
+	border: 3px solid rgba(0, 175, 175, 0.8);
+	text-align: center;
+	font-size: 2rem;
+	color: rgba(15, 60, 80, 0.8);
+	margin: 4vh 0;
+}
+
+main form input[type="submit"] {
+	padding: 1vh 2vw; border : 3px solid rgba( 0, 175, 175, 0.8);
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 2rem;
+	font-weight: normal;
+	color: rgba(15, 60, 80, 0.8);
+	border: 3px solid rgba(0, 175, 175, 0.8);
+	transition: .15s;
+}
+
+main form input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+main form input[type="submit"]:active {
+	font-weight: bold;
+}

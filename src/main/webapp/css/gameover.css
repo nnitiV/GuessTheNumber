@@ -1,0 +1,54 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+p {
+    font-family: 'VT323', monospace;
+    font-size: 8em;
+    text-align: center;
+    animation: example 1s infinite;
+    color: lime;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	background: rgb(0, 0, 175);
+	padding: 1vh 2vw;
+	border-radius: 1.25rem;
+	margin-top: 8vh;
+	font-size: 1.5rem;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	transition: .25s;
+}
+
+a:hover {
+	cursor: pointer;
+	background: rgba(0, 0, 255, 0.8);
+}
+
+
+@keyframes example {
+    0% { color: lime; text-shadow: 0 0 20px green; }
+    25% { color: green; text-shadow: 2px 2px 2px lime; transform: translate(-2px, 1px) }
+    40% { color: lime; text-shadow: none; transform: translate(0, 0) }
+    50% { color: green; text-shadow: 5px 5px 2px blue, -5px -5px 2px red; transform: translate(0, 5px) }
+    70% { color: lime; text-shadow: none; transform: translate(0, 0) }
+    80% { color: lime; text-shadow: 0 0 20px green; transform: translate(-2px, 1px) }
+    100% { color: lime; text-shadow: none; }
+}
+
+/* Vendor prefixes */
+@-webkit-keyframes example {
+    0% { color: lime; -webkit-text-shadow: 0 0 20px green; }
+    25% { color: green; -webkit-text-shadow: 2px 2px 2px lime; -webkit-transform: translate(-2px, 1px) }
+    40% { color: lime; -webkit-text-shadow: none; -webkit-transform: translate(0, 0) }
+    50% { color: green; -webkit-text-shadow: 5px 5px 2px blue, -5px -5px 2px red; -webkit-transform: translate(0, 5px) }
+    70% { color: lime; -webkit-text-shadow: none; -webkit-transform: translate(0, 0) }
+    80% { color: lime; -webkit-text-shadow: 0 0 20px green; -webkit-transform: translate(-2px, 1px) }
+    100% { color: lime; -webkit-text-shadow: none; }
+}
