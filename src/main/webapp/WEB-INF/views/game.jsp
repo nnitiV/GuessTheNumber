@@ -12,7 +12,7 @@
 		<a href="/">Give up</a>
 	</header>
 	<main>
-		<h1>${attempts}ATTEMPTS REMAINING!</h1>
+		<h1>${attempts} ATTEMPTS REMAINING!</h1>
 		<form action="guess">
 			<input type="number" min="1" max="100" name="guess" placeholder="?"
 				required> <input type="submit" value="LAUNCH GUESS">

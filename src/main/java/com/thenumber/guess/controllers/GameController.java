@@ -21,6 +21,7 @@ public class GameController {
 		model.addAttribute("isHomepage", false);
 		model.addAttribute("message", "Great! You have selected the Easy difficulty level");
 		session.setAttribute("attempts", "10");
+		session.removeAttribute("number");
 		return "easy";
 	}
 
@@ -29,6 +30,7 @@ public class GameController {
 		model.addAttribute("isHomepage", false);
 		model.addAttribute("message", "Nice! You have selected the Easy difficulty level");
 		session.setAttribute("attempts", "5");
+		session.removeAttribute("number");
 		return "normal";
 	}
 
@@ -37,13 +39,14 @@ public class GameController {
 		model.addAttribute("isHomepage", false);
 		model.addAttribute("message", "Wow! You have selected the Hard difficulty level");
 		session.setAttribute("attempts", "3");
+		session.removeAttribute("number");
 		return "hard";
 	}
 
 	@RequestMapping("/start")
 	public String startGame(Model model, @SessionAttribute int attempts, HttpSession session) {
 		model.addAttribute("attempts", attempts);
-		if (session.getAttribute("number") != null) {
+		if (session.getAttribute("number") == null) {
 			session.setAttribute("number", (new Random().nextInt(101) + 1));
 		}
 		System.out.println(session.getAttribute("number"));
@@ -54,6 +57,7 @@ public class GameController {
 	public String guess(HttpSession session, @SessionAttribute int number, @SessionAttribute int attempts,
 			@RequestParam int guess) {
 		if (attempts < 2) {
+			session.removeAttribute("number");
 			return "gameover";
 		}
 		if (guess == number) {
